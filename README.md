@@ -3,6 +3,14 @@ Source Codes and Datasets used for the paper _Wasserstein Logistic Regression wi
 
 The preprint is available on [Optimization Online](http://www.optimization-online.org/) and [arXiv](https://arxiv.org/). 
 
+## Introduction
+This repository provides the following:
+- Example scripts that generate synthetic data, split train:test datasets. Similarly, scripts that prepare UCI datasets, as well as read them.
+- The implementation of the (intractable) monolithic exponential-cone optimization problems for Wasserstein logistic regression.
+- The implementation of the proposed cutting-plane methods, both for all-categorical and mixed-feature datasets. This includes algorithmic enhancements such as *removing* redundant constraints periodically.
+- Cross-validation implementations.
+- Examples on a full scheme of tuning parameters via cross-validation, trainin the model on the whole training set, and then report the test set error.
+
 ## Dependencies
 Our Python3 code to prepare UCI datasets in a format that is compatible with our paper as well as Julia codes uses `pandas` and `NumPy` packages.
 
