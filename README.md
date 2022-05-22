@@ -5,7 +5,7 @@ The preprint is available on [Optimization Online](http://www.optimization-onlin
 
 ## Introduction
 This repository provides the following:
-- Example scripts that generate synthetic data, split train:test datasets. Similarly, scripts that prepare UCI datasets, as well as read them.
+- Example scripts that generate synthetic data and apply train:test split. Similarly, scripts that prepare and read UCI datasets.
 - The implementation of the (intractable) monolithic exponential-cone optimization problems for Wasserstein logistic regression.
 - The implementation of the proposed cutting-plane methods, both for all-categorical and mixed-feature datasets. This includes algorithmic enhancements such as *removing* redundant constraints periodically.
 - Cross-validation implementations.
@@ -21,7 +21,7 @@ Our Julia codes use the latest (as of May 2022) versions of the following packag
 
 ## Final Notes
 The following scripts are also available upon request:
-- Parallelized implementation of all the experiments to run on Linux-based cluster computers.
+- Parallelized codes for the experiments to run on Linux-based cluster computers (we work with [Imperial College Cluster Computers](https://www.imperial.ac.uk/computational-methods/hpc/)).
 - [PBS](https://en.wikipedia.org/wiki/Portable_Batch_System) job codes.
 - Codes we used to visualize experiments.
 
