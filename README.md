@@ -120,12 +120,13 @@ The following is a guide to the scripts related to mixed-feature datasets. These
 We are omitting the mixed-feature generalization of previous scripts `main_hpc.jl`, `interpret_results.jl`, `regularized_main_hpc.jl`, and `regularized_interpret_results.jl`, since these are mostly identical with the only difference being name of the functions called, and the name of UCI datasets.
 
 ## Final Notes
-The following scripts are also available upon request:
+In this repository, we included core codes to illustrate the implementation of our algorithm. However, there are some extension or codes not provided, as they are not directly relevant to our findings. To this end, we would like to note that, the following scripts are also available upon request:
 - Parallelized codes for the experiments to run on Linux-based cluster computers (we work with [Imperial College Cluster Computers](https://www.imperial.ac.uk/computational-methods/hpc/)).
 - [PBS](https://en.wikipedia.org/wiki/Portable_Batch_System) job codes.
-- Codes we used to visualize experiments.
+- Codes we used to visualize experiments (via `PlotlyJS` and `Julia.Plots`).
 - Some algorithmic techniques on speeding up the cutting-plane method are available (*e.g.*, using hash tables to check if a constraint was deleted before not to cycle).
 - Our codes for benchmark methods from the literature, for example, those for the experiments mentioned in Section 2.2.
+- Solving nature's optimization prbolem for each fixed beta to find the worst-case distributions, for example, in order to get the right plot of Figure 1 of our paper.
 
 ## Thank You
 Thank you for your interest in our work. If you found this work useful in your research and/or applications, please star this repository and cite:
