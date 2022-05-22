@@ -117,7 +117,7 @@ The following is a guide to the scripts related to mixed-feature datasets. These
     
 </details>
 
-We are omitting the mixed-feature generalization of previous scripts `main_hpc.jl`, `interpret_results.jl`, `regularized_main_hpc.jl`m, and `regularized_interpret_results.jl`, since these will stay identical with the only difference being name of the functions called.
+We are omitting the mixed-feature generalization of previous scripts `main_hpc.jl`, `interpret_results.jl`, `regularized_main_hpc.jl`, and `regularized_interpret_results.jl`, since these are mostly identical with the only difference being name of the functions called, and the name of UCI datasets.
 
 ## Final Notes
 The following scripts are also available upon request:
