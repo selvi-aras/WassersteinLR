@@ -126,7 +126,7 @@ In this repository, we included core codes to illustrate the implementation of o
 - Codes we used to visualize experiments (via `PlotlyJS` and `Julia.Plots`).
 - Some algorithmic techniques on speeding up the cutting-plane method are available (*e.g.*, using hash tables to check if a constraint was deleted before not to cycle).
 - Our codes for benchmark methods from the literature, for example, those for the experiments mentioned in Section 2.2.
-- Solving nature's optimization prbolem for each fixed beta to find the worst-case distributions, for example, in order to get the right plot of Figure 1 of our paper.
+- Solving nature's optimization problem for each fixed beta to find the worst-case distributions, for example, in order to get the right plot of Figure 1 of our paper.
 
 ## Thank You
 Thank you for your interest in our work. If you found this work useful in your research and/or applications, please star this repository and cite:
