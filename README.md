@@ -18,6 +18,19 @@ The Julia version we used was the [stable release](https://julialang.org/downloa
 
 Our Julia codes use the latest (as of May 2022) versions of the following packages: `JuMP` (to call MOSEK and pass the conic problem), `LinearAlgebra` (for norm operations), `Random` (to fix random seeds), `MosekTools` (as a MOSEK interface), `MathOptInterface` (base for JuMP), `Dualization` (for when we solve the dual-conic problem), `DelimitedFiles` (to write CSV files), `InvertedIndices` (for cross-validation), `JLD2` (to save Julia variables), `Statistics` (to get, e.g., quantiles), `DataFrames` (to work with dataframes), `Plots` (Julia's plotting environment), `PlotlyJS` (Julia support of Plotly), `GR` (support visualizations). 
 
+## Description -- All Categorical Datasets
+The following is a guide to the scripts related to categorical datasets. Here we include short descriptions and example usage of each script.
+
+<details>
+  <summary> <b> generate_data.jl </b> </summary>
+  
+  Calling `generate_dataset(N, n)` returns a training set with `N` rows and `n` binary features, and a test set with `100N` rows and `n` binary features. To construct this data, we first construct a 'true' unit coefficient vector (*i.e.*, true betas and the intercept) at random. Then, we generate the $\pm 1$ predictors at random, and for each instance, we are finding the probability of that instance belonging to label $+1$. The label is then sampled via a Bernuolli distribution according to this probability.
+  
+  The function `train_test_split(X_raw,y_raw, split)` splits the given dataset `X_raw, y_raw` via a 80\%:20\% train:test ratio. The input `split` is an integer between $1$ and $20$ as in the paper we are randomly splitting UCI datasets $20$ times, and this number drives the random seed.
+  
+  For a given hypothesis --`beta` (coefficients) and `beta0` (intercept)-- calling `misclassification(X_test, y_test, beta, beta0)` returns the number of misclassified instances on the test set `X_test, y_test` using the hypothesis.
+  
+</details>
 
 ## Final Notes
 The following scripts are also available upon request:
