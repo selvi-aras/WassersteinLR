@@ -53,6 +53,16 @@ The following is a guide to the scripts related to categorical datasets. Here we
     
 </details>
 
+
+<details>
+  <summary> <b> cross_validate.jl (cross validation for non-robust and distributionally robust logistic regression) </b> </summary>
+  
+  For a given dataset `X, y`, as well as the list of dummies for each original feature `groups`, calling `cv_logistic_regression(X,y, groups; regular = 0, lambda = 0)` returns a list of five errors, corresponding to 5-CV errors of regularized (LASSO if `regular = 1`, Ridge if `regular = 2`) logistic regression corresponding to the regularization penalty `lambda`. 
+  
+  Similarly, `cv_wasserstein(X, y, groups, epsilon; regular= 0, pen= 0, dual_conic = 0, metric = 0, p = 1, kappa = 1)` returns the CV errors for the Wasserstein DRO model with given `epsilon` (radius of the Wasserstein ball), `regular` and `pen` (regularization and penalty), `metric, p, kappa` (values defining the ground metric -- note: in our paper we always use `metric = 1, p=1` and try `kappa = 1` or `kappa = T` with `T` being number of binary variables).
+    
+</details>
+
 <details>
   <summary> <b> main_hpc.jl (An example implementation of the experiments for unregularized methods) </b> </summary>
   
