@@ -68,6 +68,14 @@ The following is a guide to the scripts related to categorical datasets. Here we
     
 </details>
 
+<details>
+  <summary> <b> regularized_main_hpc.jl, regularized_interpret_results.jl (Extensions to regularized methods) </b> </summary>
+  
+  Analogous to main_hpc.jl and interpret_results.jl, respectively, however, extended to regularization. For example, instead of cross-validating the Wasserstein DRO Logistic Regression model for each $\epsilon$, we cross-validate for each pair of $\epsilon$ (Wasserstein ball radius) and $\lambda$ (LASSO penalty).
+   
+</details>
+
+
 ## Final Notes
 The following scripts are also available upon request:
 - Parallelized codes for the experiments to run on Linux-based cluster computers (we work with [Imperial College Cluster Computers](https://www.imperial.ac.uk/computational-methods/hpc/)).
