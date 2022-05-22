@@ -121,7 +121,7 @@ function most_violated_feature_label_metric(X, y, groups, p,kappa,val_beta, val_
     return max_viol, adversarial_x, adversarial_y, adversarial_d, adversarial_loc
 end
 "Solve the Wasserstein DRO Logistic Regression problem via the proposed cutting-plane method."
-function cutting_wasserstein_updated(X, y, groups, epsilon; regular = 0, pen = 0 , dual_conic = 0, metric = 0, p = 1, kappa = 1, restriction = 0)
+function cutting_wasserstein(X, y, groups, epsilon; regular = 0, pen = 0 , dual_conic = 0, metric = 0, p = 1, kappa = 1, restriction = 0)
     ################# Parameters are the following:
     # X -> input matrix; y -> target vector; epsilon -> Wasserstein radius
     #regular -> 0: no regul., 1: ell_1 regul., 2: ell_2 regul.
