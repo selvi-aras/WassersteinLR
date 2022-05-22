@@ -46,6 +46,7 @@ The following is a guide to the scripts related to categorical datasets. Here we
   
 </details>
 
+<details>
   <summary> <b> cutting.jl (Wasserstein Logistic Regression -- cutting-plane implementation) </b> </summary>
   
   The function `cutting_wasserstein_updated` solves the Wasserstein DRO formulation of logistic regression via the cutting-plane method we propose. Needless to say, the output will be the same with the monolithic solution in `monolithic.jl`, though the solution is faster as demonstrated in Figure 2 of our paper. The input of this function is idential with those of `monolithic_wasserstein` in the file `monolithic.jl`. However, the output has an additional value, named `iteration`, standing for number of iterations the cutting-plane algorithm took before termination, as well as `solver_times` that returns the time MOSEK took to solve each sub-problem. 
