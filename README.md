@@ -75,6 +75,16 @@ The following is a guide to the scripts related to categorical datasets. Here we
    
 </details>
 
+## Description -- Mixed-Feature Datasets
+The following is a guide to the scripts related to mixed-feature datasets. These are simple extensions of the scripts for categorical datasets we presented above.
+
+<details>
+  <summary> <b> mixed_generate_data.jl (synthetic data generation, out-of-sample evaluations) </b> </summary>
+  
+  Analogous to `generate_data.jl`. The only extension is the existence of continuous features. The function `mixed_generate_dataset(N, n, n_cont)` as opposed to `generate_dataset(N, n)`, has an additional input `n_cont`, standing for number of continuous feature. Similarly, `mixed_misclassification(X_cont_test, X_test, y_test, beta_cont_opt, beta_opt, beta0_opt)` takes additional inputs `X_cont_test` (a matrix standing for the continuous-features of the test indices), and `beta_cont_opt` (beta coefficients corresponding to the continuous variables). A row of `X_test` and `X_cont_test` correspond to the same instance, however, we collect the binary and continuous variables via separate matrices for the ease of implementation (especially for the cutting-plane method, since the distance calculations of continuous and binary variables differ).
+
+</details>
+
 
 ## Final Notes
 The following scripts are also available upon request:
