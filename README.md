@@ -44,6 +44,7 @@ The following scripts are also available upon request:
 - Parallelized codes for the experiments to run on Linux-based cluster computers (we work with [Imperial College Cluster Computers](https://www.imperial.ac.uk/computational-methods/hpc/)).
 - [PBS](https://en.wikipedia.org/wiki/Portable_Batch_System) job codes.
 - Codes we used to visualize experiments.
+- Some algorithmic techniques on speeding up the cutting-plane method are available (*e.g.*, using hash tables to check if a constraint was deleted before not to cycle).
 
 ## Thank You
 Thank you for your interest in our work. If you found this work useful in your research and/or applications, please star this repository and cite:
