@@ -60,6 +60,14 @@ The following is a guide to the scripts related to categorical datasets. Here we
     
 </details>
 
+
+<details>
+  <summary> <b> interpret_results.jl (Interpret the results of main_hpc.jl) </b> </summary>
+  
+  At line 17, specifying `d_to_take` value corresponds to which UCI dataset to interpret. Running the script will return, for example, median errors of each method under 20 train:test split for that dataset (includes model selection via cross-validation).
+    
+</details>
+
 ## Final Notes
 The following scripts are also available upon request:
 - Parallelized codes for the experiments to run on Linux-based cluster computers (we work with [Imperial College Cluster Computers](https://www.imperial.ac.uk/computational-methods/hpc/)).
