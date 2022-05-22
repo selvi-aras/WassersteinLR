@@ -255,7 +255,7 @@ function mixed_cutting_wasserstein(X_cont, X, y, groups, epsilon; regular = 0, p
         end
     end
     if termination_status(model) != OPTIMAL #warn if not optimal
-        print("Solution is not optimal with error code ", termination_status(model) )
+        error("Solution is not optimal with error code ", termination_status(model) )
     end
     #optimal_obj = JuMP.objective_value(model)
     return model, iteration, solver_times
