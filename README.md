@@ -22,7 +22,7 @@ Our Julia codes use the latest (as of May 2022) versions of the following packag
 The following is a guide to the scripts related to categorical datasets. Here we include short descriptions and example usage of each script.
 
 <details>
-  <summary> <b> generate_data.jl </b> </summary>
+  <summary> <b> generate_data.jl (synthetic data generation, out-of-sample evaluations) </b> </summary>
   
   Calling `generate_dataset(N, n)` returns a training set with `N` rows and `n` binary features, and a test set with `100N` rows and `n` binary features. To construct this data, we first construct a 'true' unit coefficient vector (*i.e.*, true betas and the intercept) at random. Then, we generate the $\pm 1$ predictors at random, and for each instance, we are finding the probability of that instance belonging to label $+1$. The label is then sampled via a Bernuolli distribution according to this probability.
   
