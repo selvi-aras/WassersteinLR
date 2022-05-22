@@ -32,6 +32,13 @@ The following is a guide to the scripts related to categorical datasets. Here we
   
 </details>
 
+<details>
+  <summary> <b> logistic_regressions.jl (non-robust naive or non-robust regularized Logistic Regression) </b> </summary>
+  
+  For a given training set `X, y`, calling `logistic_regression(X,y, groups; regular = 0, lambda = 0)` returns an optimized `JuMP` model for logistic regression trained on this set. To see the decisions, we call `model_summarize(model)`. Here, `groups` gives us the groups of binary variables that correspond to original categorical features. For example, if we have 4 predictors, we can have `groups = [1:1, 2:2, 3:3, 4:4]`, which means all binary variables are corresponding to original features, whereas `groups = [1:1, 2:4]` means the first binary variable corresponds to an original feature whereas second, third and fourth variables are the dummy variables for an original feature with three possible categories. Moreover, `regular = 0` calls the naive logistic regression, `regular = 1` calls the LASSO-regularized logistic regression, and `regular = 2` calls the Ridge-regularized logistic regression. In case where `regularized` is not zero, one should specify the regularization penalty parameter `lambda`. 
+  
+</details>
+
 ## Final Notes
 The following scripts are also available upon request:
 - Parallelized codes for the experiments to run on Linux-based cluster computers (we work with [Imperial College Cluster Computers](https://www.imperial.ac.uk/computational-methods/hpc/)).
