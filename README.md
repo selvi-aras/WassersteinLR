@@ -53,6 +53,13 @@ The following is a guide to the scripts related to categorical datasets. Here we
     
 </details>
 
+<details>
+  <summary> <b> main_hpc.jl (An example implementation of the experiments for unregularized methods) </b> </summary>
+  
+  The script that is called from the high performance computers for parallelized runs for *unregularized* non-robust logistic regression and *unregularized* Wasserstein logistic regression. There is a single function named `hpc(job_nr)` that takes a job number in, figures out the parameter setting we would like to run (*e.g.*, second UCI dataset, Wasserstein DRO, $\epsilon = 0.1$, $p=1$, $kappa = 1$, third train:test split, etc.), and saves the relevant results via `jldsave` command of `JLD2` package. The so-called "relevant results" include 5-fold CV errors of the specific parameter setting, the optimal beta values over the whole training set (to be taken **if** decided from the validation steps), number of cutting-plane iterations it took over the whole training set, test-set error corresponding to the trained model (again, only to be reported **after** validating a model via cross validation).
+    
+</details>
+
 ## Final Notes
 The following scripts are also available upon request:
 - Parallelized codes for the experiments to run on Linux-based cluster computers (we work with [Imperial College Cluster Computers](https://www.imperial.ac.uk/computational-methods/hpc/)).
