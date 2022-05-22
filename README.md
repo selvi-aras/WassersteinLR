@@ -40,7 +40,7 @@ The following is a guide to the scripts related to categorical datasets. Here we
 </details>
 
 <details>
-  <summary> <b> monolithic.jl (Wasserstein Logistinc Regression -- monolithic implementation) </b> </summary>
+  <summary> <b> monolithic.jl (Wasserstein Logistic Regression -- monolithic implementation) </b> </summary>
   
   For a given training set `X, y`, as well as the list of dummies for each original feature `groups`, calling `monolithic_wasserstein(X, y, groups, epsilon; regular = 0, pen = 0, dual_conic = 0, metric = 0, p = 1, kappa = 1, restriction =0)` solves the Wasserstein DRO formulation of logistic regression. Here, the input `epsilon` is the radius of the Wasserstein ball. The input parameter `regular` is to set the regularization (0: no regularization, 1: LASSO, 2: Ridge) and in case of regularization the penalty parameter is given via `pen`. The input `dual_conic`, if set to 1, solves the dual exponential conic problem instead of the primal problem. The ground metric is decided by `metric`, and in our paper we always use `metric = 1` which corresponds to the feature-label metric, however, `metric = 0` is a coarse metric that returns $1$ if two instances are identical and $0$ otherwise. In case `metric= 1` is chosen as in our paper, the parameter `p` sets the $p$-norm to take for the dsitance $||x - x'||$ and `kappa` sets the $\kappa$-variable used in our distance metric to weigh the label mismatch.
   
