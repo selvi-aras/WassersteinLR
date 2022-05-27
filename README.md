@@ -1,7 +1,7 @@
 # WassersteinLR
 Source Codes and Datasets used for the paper _Wasserstein Logistic Regression with Mixed Features_ by _Aras Selvi, Mohammad Reza Belbasi, Martin Haugh, and Wolfram Wiesemann (2022)_.
 
-The preprint is available on [Optimization Online](http://www.optimization-online.org/) and [arXiv](https://arxiv.org/). 
+The preprint is available on [Optimization Online]([http://www.optimization-online.org/](http://www.optimization-online.org/DB_HTML/2022/05/8929.html)) and [arXiv]([https://arxiv.org/](https://arxiv.org/abs/2205.13501)). 
 
 ## Introduction
 This repository provides the following:
