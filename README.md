@@ -129,6 +129,7 @@ In this repository, we included core codes to illustrate the implementation of o
 - Some algorithmic techniques on speeding up the cutting-plane method are available (*e.g.*, using hash tables to check if a constraint was deleted before not to cycle).
 - Implementation of benchmark methods from the literature, for example, those for the experiments mentioned in Section 2.2.
 - Solving nature's optimization problem for each fixed beta to find the worst-case distributions, for example, in order to get the right plot of Figure 1 of our paper.
+- *Update:* In our revision, we have included new benchmark algorithms, including Wasserstein Profile Inference. Implementation of this technique will be pushed to this repository before the NeurIPS2022 conference. 
 
 ## Thank You
 Thank you for your interest in our work. If you found this work useful in your research and/or applications, please star this repository and cite:
