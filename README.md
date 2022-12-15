@@ -3,7 +3,7 @@ Source Codes and Datasets used for the paper _Wasserstein Logistic Regression wi
 
 The preprint is available on [Optimization Online](http://www.optimization-online.org/DB_HTML/2022/05/8929.html) and [arXiv](https://arxiv.org/abs/2205.13501).
 
-*Update:* This paper has been accepted by **NeurIPS022**.
+*Update:* This paper has been accepted by **[NeurIPS022](https://openreview.net/forum?id=U-RsnLYHcKa)**.
 
 ## Introduction
 This repository provides the following:
