@@ -136,8 +136,10 @@ Thank you for your interest in our work. If you found this work useful in your r
 ```
 @article{WassersteinLR,
   title={Wasserstein logistic regression with mixed features},
-  author={Selvi, Aras and Belasi, Mohammad Reza and Haugh, Martin and Wiesemann, Wolfram},
-  journal={Available on Optimization Online},
+  author={Selvi, Aras and Belbasi, Mohammad Reza and Haugh, Martin and Wiesemann, Wolfram},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={16691--16704},
   year={2022}
 }
 ```
